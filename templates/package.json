@@ -12,9 +12,8 @@
     "prod": "flow build"
   },
   "dependencies": {
-    "@local/flow-axios": "0.3.0",
     "vue": "^2.5.13"<% if(router) {%>,
-    "vue-router": "^3.0.1",<%}%>
+    "vue-router": "^3.0.1"<%}%>
   },
   "devDependencies": {
     "babel-eslint": "^8.2.5",
