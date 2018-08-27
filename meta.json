@@ -1,0 +1,25 @@
+{
+    "prompts": [
+        {
+            "name": "name",
+            "type": "input",
+            "message": "项目名称："
+        },
+        {
+            "name": "router",
+            "type": "confirm",
+            "message": "Install vue-router?",
+            "default": true
+        },
+        {
+            "name": "prerender",
+            "type": "confirm",
+            "message": "是否开启预渲染模式?",
+            "default": true
+        }
+    ],
+    "filters": {
+        "src/router/**/*": "router",
+        "src/container/**/*": "router"
+    }
+}

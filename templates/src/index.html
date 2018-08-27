@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-base project</title>
+  </head>
+  <body>
+    {{#if prerender}}
+    <% if (process.env.NODE_ENV == "development") {%>
+      <div id="app"></div>
+    <%} else {%>
+      <!--vue-ssr-outlet-->
+    <%}%>
+    {{else}}
+    <div id="app"></div>
+    {{/if}}
+  </body>
+</html>

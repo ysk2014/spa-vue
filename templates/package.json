@@ -1,0 +1,29 @@
+{
+  "name": "<%= name%>",
+  "version": "1.0.0",
+  "description": "vue spa",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "dev": "flow start",
+    "prod": "flow build"
+  },
+  "dependencies": {
+    "@local/flow-axios": "0.3.0",
+    "vue": "^2.5.13"<% if(router) {%>,
+    "vue-router": "^3.0.1",<%}%>
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "babel-polyfill": "^6.26.0",
+    "cross-env": "^5.1.3",
+    "eslint-plugin-html": "^4.0.5",
+    "eslint-plugin-vue": "^4.5.0",
+    "flow-build": "^0.5.2",
+    "flow-vue-hook": "^1.1.0",
+    "vue-template-compiler": "^2.5.13"
+  }
+}
