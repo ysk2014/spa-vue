@@ -5,14 +5,10 @@
     <title>vue-base project</title>
   </head>
   <body>
-    {{#if prerender}}
-    <% if (process.env.NODE_ENV == "development") {%>
-      <div id="app"></div>
-    <%} else {%>
+    <% if (prerender) {%>
       <!--vue-ssr-outlet-->
-    <%}%>
-    {{else}}
+    <%} else {%>
     <div id="app"></div>
-    {{/if}}
+    <%}%>
   </body>
 </html>
