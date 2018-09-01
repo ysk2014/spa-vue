@@ -19,8 +19,6 @@
 </template>
 
 <script>
-import axios from "@/api";
-
 export default {
     data() {
         return {
