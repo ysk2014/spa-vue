@@ -22,7 +22,7 @@
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-vue": "^4.5.0",
     "flow-build": "^0.5.2",
-    "flow-vue-hook": "^1.1.1",
+    "flow-vue-hook": "^1.1.2",
     "vue-template-compiler": "^2.5.13"
   }
 }
