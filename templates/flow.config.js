@@ -23,10 +23,6 @@ module.exports = {
         }
     },
 
-    plugins: {
-        npm: true
-    },
-
     // vue/react/multiple/spa
     mode: <%if (prerender) {%>"vue-prerender"<% } else {%>"vue"<%}%>,
 
