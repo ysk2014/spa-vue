@@ -16,6 +16,12 @@
             "type": "confirm",
             "message": "是否开启预渲染模式?",
             "default": true
+        },
+        {
+            "name": "webpack",
+            "type": "confirm",
+            "message": "是否webpack4版本打包?",
+            "default": true
         }
     ],
     "filters": {

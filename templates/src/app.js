@@ -1,4 +1,6 @@
+<% if (!webpack) {%>
 import "babel-polyfill";
+<% } %>
 import Vue from "vue";
 import App from "./app.vue";
 

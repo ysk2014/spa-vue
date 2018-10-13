@@ -13,8 +13,8 @@
         </ul>
 
         <% if (router) {%>
-            <router-view/>
-            <% } %>
+        <router-view/>
+        <% } %>
     </div>
 </template>
 
