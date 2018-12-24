@@ -12,7 +12,7 @@
             </li>
         </ul>
 
-        <% if (router) {%>
+        <% if (meta.router) {%>
         <router-view/>
         <% } %>
     </div>
