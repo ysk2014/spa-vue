@@ -24,7 +24,7 @@ module.exports = {
     },
 
     // vue/react/multiple/spa
-    mode: <%if (prerender) {%>"vue-prerender"<% } else {%>"vue"<%}%>,
+    mode: <%if (meta.prerender) {%>"vue-prerender"<% } else {%>"vue"<%}%>,
 
     hooks: [new VueHook()]
 };

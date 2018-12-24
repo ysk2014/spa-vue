@@ -1,5 +1,5 @@
 {
-  "name": "<%= name%>",
+  "name": "<%= meta.name%>",
   "version": "1.0.0",
   "description": "vue spa",
   "author": "",
@@ -12,17 +12,17 @@
     "prod": "flow build"
   },
   "dependencies": {
-    "vue": "^2.5.13"<% if(router) {%>,
+    "vue": "^2.5.13"<% if(meta.router) {%>,
     "vue-router": "^3.0.1"<%}%>
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.5",<% if(!webpack) {%>
+    "babel-eslint": "^8.2.5",<% if(!meta.webpack) {%>
     "babel-polyfill": "^6.26.0",<%}%>
     "cross-env": "^5.1.3",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-html": "^4.0.5",
-    "eslint-plugin-vue": "^4.5.0",<% if(webpack) {%>
+    "eslint-plugin-vue": "^4.5.0",<% if(meta.webpack) {%>
     "flow-build": "^1.0.1",
     "flow-vue-hook": "^2.0.0",<%}else{%>
     "flow-build": "^0.5.3",

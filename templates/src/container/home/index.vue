@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        <% if (prerender) {%>
+        <% if (meta.prerender) {%>
         asyncData() {
             return Promise.resolve({
                 name: "async home"

@@ -1,26 +1,26 @@
-<% if (!webpack) {%>
+<% if (!meta.webpack) {%>
 import "babel-polyfill";
 <% } %>
 import Vue from "vue";
 import App from "./app.vue";
 
-<% if (router) {%>
+<% if (meta.router) {%>
 import router from "./router"
 <% } %>
 
 
-<%if (prerender) {%>
+<%if (meta.prerender) {%>
 export default {
     el: "#app",
     data() {
         const app = new Vue({
-            <% if (router) {%>
+            <% if (meta.router) {%>
             router,
             <% } %>
             render: h => h(App)
         });
         return {
-            app<% if(router) {%>,
+            app<% if(meta.router) {%>,
             router
             <% } %>
         }
@@ -30,7 +30,7 @@ export default {
 
 const app = new Vue({
     el: "#app",
-    <% if (router) {%>
+    <% if (meta.router) {%>
     router,
     <% } %>
     render: h => h(App)
@@ -38,7 +38,7 @@ const app = new Vue({
 
 export default {
     app,
-    <% if (router) {%>
+    <% if (meta.router) {%>
     router
     <% } %>
 };
