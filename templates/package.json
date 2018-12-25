@@ -23,7 +23,7 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-vue": "^4.5.0",<% if(meta.webpack) {%>
-    "flow-build": "^1.0.1",
+    "flow-build": "^1.0.3",
     "flow-vue-hook": "^2.0.0",<%}else{%>
     "flow-build": "^0.5.3",
     "flow-vue-hook": "^1.1.2",<%}%>
